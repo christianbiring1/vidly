@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 const Like = (props) => {
   let classes = "fa fa-heart";
@@ -11,5 +11,5 @@ const Like = (props) => {
     aria-hidden="true"></i>
     );
 }
- 
+
 export default Like;
