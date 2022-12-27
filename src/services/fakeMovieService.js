@@ -1,5 +1,5 @@
 
-import * as genresAPI from "./fakeGenreService";
+// import * as genresAPI from "./fakeGenreService";
 
 const movies = [
   {
@@ -86,10 +86,10 @@ export function getMovie(id) {
   return movies.find(m => m._id === id);
 }
 
-export function saveMovie(movie) {
-  let movieInDB = movies.find(m => m._id === movie._id) || {};
-  movieInDB.name = movie.name;
-  movieInDB.genre = genresAPI.genre.find(g => g._id === movie.genreId);
-  movieInDB.numberInStock = movie.numberInStock;
-  movieInDB.dailyRentalRate = movie.dailyRentalRate;
-}
+// export function saveMovie(movie) {
+//   let movieInDB = movies.find(m => m._id === movie._id) || {};
+//   movieInDB.name = movie.name;
+//   movieInDB.genre = genresAPI.genre.find(g => g._id === movie.genreId);
+//   movieInDB.numberInStock = movie.numberInStock;
+//   movieInDB.dailyRentalRate = movie.dailyRentalRate;
+// }
