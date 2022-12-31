@@ -6,4 +6,6 @@ export function paginate(items, pageNumber, pageSize)  {
     .slice(startIndex)
     .take(pageSize)
     .value();
+  // Without using Lodash we could say:
+  // return (items.slice(startIndex, startIndex + pageSize))
 }
